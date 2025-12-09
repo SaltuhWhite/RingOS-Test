@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ring OS Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Ring OS</h1>
+    <p class="tagline">Semi-functional prototype</p>
+  </header>
+
+  <main>
+    <!-- App grid -->
+    <section id="app-grid">
+      <!-- Marketplace app -->
+      <div class="app-tile" onclick="openApp('marketplace')">
+        <img src="art/marketplace.png" alt="Marketplace icon">
+        <span>Marketplace</span>
+      </div>
+
+      <!-- Feature Enabler app -->
+      <div class="app-tile" onclick="openApp('enabler')">
+        <img src="art/enabler.png" alt="Enabler icon">
+        <span>Feature Enabler</span>
+      </div>
+
+      <!-- Test Feature app -->
+      <div class="app-tile" onclick="openApp('test')">
+        <img src="art/na.png" alt="Test Feature icon">
+        <span>Test Feature</span>
+      </div>
+    </section>
+
+    <!-- App windows -->
+    <section id="app-windows"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
